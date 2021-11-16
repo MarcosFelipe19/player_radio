@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Marcos Felipe Moura Mota">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="antena">
+        <div class="bola_antena"></div>
+    </div>
+    <div class="botao-externo"></div>
+    <div class="botao2-externo"></div>
+    <div class="radio">
+        <div class="output">
+            <div class="boca">
+
+            </div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div><!--output-->
+        <div class="controls">
+           <div class="bgs">
+                <div class="bg1"></div>
+                <div class="bg2"></div>
+           </div><!--bgs--> 
+           <div class="btn botao1"></div>
+           <div class="btn botao2"></div>
+           
+           <div class="container-btns">
+            <div class="bgs">
+                <div class="bg1-interno"></div>
+                <div class="bg2-interno"></div>
+           </div><!--bgs-->
+           
+           <div class="nomeMusica">
+
+           </div>
+
+           <div class="btns-controls">
+               <p id="nome_musica">Charlie Brown Jr- Só por uma Noite</p>
+                <input onchange="selectBarra()"  id="input" type="range" min="1" max="100" value="0">
+                <img id="prev" src="./assets/retroceder.png" alt="botao de retroceder">
+                <img id="play" src="./assets/botao-play.png" alt="botao de play">
+                <img id="pausa" src="./assets/pausa.png" alt="botao de pausa">
+                <img id="next" src="./assets/avanco-rapido.png" alt="botao de avançar">
+          
+           </div><!--btns-controls-->
+           </div><!--container-btns-->
+
+        </div><!--controls-->
+    </div><!--radio-->
+    <audio style="visibility:hidden;" id="audio" controls="controls"> 
+       <source src="./assets/Charlie Brown Jr- Só por uma Noite._48k.mp3" type="audio/mp3">
+    </audio>
+    <script src="./js/script.js"></script>
+</body>
+</html>
